@@ -40,15 +40,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/*<body className={`bg-blue-900 min-h-screen text-primary-100 __className_2ad2c0`}>*/}
-      <body className={`bg-primary-900 min-h-screen text-primary-100 ${josefin.className}}`}>
-        <div id="wrapper">
+      <body className={`bg-primary-900 min-h-screen text-primary-100 ${josefin.className}
+        min-h-screen flex flex-col antialiased`}>
+        
+          
           <Header />
           
-          <main>
-            {children}
-          </main>
+          <div className={`flex-1 px-8 py-12`}>
+            <main className={`max-w-7xl mx-auto`}>
+              {children}
+            </main>
+          </div>
+          
           <footer>Copyrights by The Wild Oasis</footer>
-        </div>
+        
       </body>
     </html>
   )
