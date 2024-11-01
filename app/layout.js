@@ -1,6 +1,25 @@
 import Navigation from "@/app/_components/Navigation";
 import {Logo} from "@/app/_components/Logo";
 import "@/app/_styles/globals.css";
+import {Josefin_Sans} from "next/font/google"; //next/font/local 로 로컬에 있는 폰트를 가져올 수도 있다
+
+const josefin = Josefin_Sans({
+  subsets: ['latin'],
+  display: "swap" //default -> josefin when it donloaded,
+});
+
+console.log(josefin);
+
+// console result 에서
+// 1. className의 밸류를 jsx 의 클래스 네임 자리에 사용한다.
+// 2. 또는 josefin.className으로 밸류를 할당한다.
+// {
+//   style: {
+//     fontFamily: "'__Josefin_Sans_2ad2c0', '__Josefin_Sans_Fallback_2ad2c0'",
+//       fontStyle: 'normal'
+//   },
+//   className: '__className_2ad2c0'
+// }
 
 export const metadata = {
   // title: 'The Wild Oasis',
@@ -20,7 +39,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-blue-900 min-h-screen text-primary-100`}>
+      {/*<body className={`bg-blue-900 min-h-screen text-primary-100 __className_2ad2c0`}>*/}
+      <body className={`bg-blue-900 min-h-screen text-primary-100 ${josefin.className}}`}>
         <div id="wrapper">
           <header>
             <Logo />
