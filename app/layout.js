@@ -1,7 +1,7 @@
-import Navigation from "@/app/_components/Navigation";
-import {Logo} from "@/app/_components/Logo";
+
 import "@/app/_styles/globals.css";
-import {Josefin_Sans} from "next/font/google"; //next/font/local 로 로컬에 있는 폰트를 가져올 수도 있다
+import {Josefin_Sans} from "next/font/google";
+import Header from "@/app/_components/Header"; //next/font/local 로 로컬에 있는 폰트를 가져올 수도 있다
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -40,12 +40,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/*<body className={`bg-blue-900 min-h-screen text-primary-100 __className_2ad2c0`}>*/}
-      <body className={`bg-blue-900 min-h-screen text-primary-100 ${josefin.className}}`}>
+      <body className={`bg-primary-900 min-h-screen text-primary-100 ${josefin.className}}`}>
         <div id="wrapper">
-          <header>
-            <Logo />
-            <Navigation />
-          </header>
+          <Header />
+          
           <main>
             {children}
           </main>

@@ -1,7 +1,14 @@
 import Link from "next/link";
 
-export function Logo () {
+function Logo() {
     return (
-      <Link className={`flex items-center gap-4 z-10`} href={`/`} ><img src="/logo.png" alt="The Wild Oasis Logo"/></Link>
-    )
+      <Link href="/" className="flex items-center gap-4 z-10">
+          <img src="/logo.png" height="60" width="60" alt="The Wild Oasis logo" />
+          <span className="text-xl font-semibold text-primary-100">
+        The Wild Oasis
+      </span>
+      </Link>
+    );
 }
+
+export default Logo;
