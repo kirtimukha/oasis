@@ -8,7 +8,6 @@ const josefin = Josefin_Sans({
   display: "swap" //default -> josefin when it donloaded,
 });
 
-console.log(josefin);
 
 // console result 에서
 // 1. className의 밸류를 jsx 의 클래스 네임 자리에 사용한다.
