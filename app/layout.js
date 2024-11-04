@@ -45,8 +45,8 @@ export default function RootLayout({ children }) {
           
           <Header />
           
-          <div className={`flex-1 px-8 py-12 relative`}>
-            <main className={`max-w-7xl mx-auto`}>
+          <div className={`flex-1 px-8 py-12 relative gird`}>
+            <main className={`max-w-7xl mx-auto w-fulll`}>
               {children}
             </main>
           </div>
