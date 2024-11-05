@@ -1,14 +1,14 @@
 import CabinCard from "@/app/_components/CabinCard";
+import { getCabins } from "@/app/_lib/data-service";
 
 export const metadata = {
-  title: 'Cabins',
-  description: 'Cabins detail, look at precisely',
-  keywords: 'Cabins, details',
-}
-export default function Page() {
+  title: "Cabins",
+  description: "Cabins detail, look at precisely",
+  keywords: "Cabins, details",
+};
+export default async function Page() {
   // CHANGE
-  const cabins = [];
-  
+  const cabins = await getCabins();
   return (
     <div>
       <h1 className="text-4xl mb-5 text-accent-400 font-medium">
@@ -18,15 +18,15 @@ export default function Page() {
         Cozy yet luxurious cabins, located right in the heart of the Italian
         Dolomites. Imagine waking up to beautiful mountain views, spending your
         days exploring the dark forests around, or just relaxing in your private
-        hot tub under the stars. Enjoy nature&apos;s beauty in your own little home
-        away from home. The perfect spot for a peaceful, calm vacation. Welcome
-        to paradise.
+        hot tub under the stars. Enjoy nature&apos;s beauty in your own little
+        home away from home. The perfect spot for a peaceful, calm vacation.
+        Welcome to paradise.
       </p>
-      
+
       {cabins.length > 0 && (
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 xl:gap-14">
-          {cabins.map((cabin) => (
-            <CabinCard cabin={cabin} key={cabin.id} />
+          {cabins.map((item) => (
+            <CabinCard cabin={item} key={item.id} />
           ))}
         </div>
       )}
