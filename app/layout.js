@@ -1,7 +1,7 @@
 
-import "@/app/_styles/globals.css";
 import {Josefin_Sans} from "next/font/google";
 import Header from "@/app/_components/Header"; //next/font/local 로 로컬에 있는 폰트를 가져올 수도 있다
+import "@/app/_styles/globals.css";
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
