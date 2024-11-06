@@ -9,6 +9,7 @@ export const metadata = {
 export default async function Page() {
   // CHANGE
   const cabins = await getCabins();
+  console.log(cabins, "::cabins");
   return (
     <div>
       <h1 className="text-4xl mb-5 text-accent-400 font-medium">

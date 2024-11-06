@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 import img1 from "@/public/about-1.jpg";
 import Image from "next/image";
 
 export const metadata = {
-  title: 'About',
-}
+  title: "About",
+};
 
 export default function Page() {
   return (
@@ -14,29 +14,29 @@ export default function Page() {
         <h1 className="text-4xl mb-10 text-accent-400 font-medium">
           Welcome to The Wild Oasis
         </h1>
-        
+
         <div className="space-y-8">
           <p>
             Where nature&apos;s beauty and comfortable living blend seamlessly.
             Hidden away in the heart of the Italian Dolomites, this is your
-            paradise away from home. But it&apos;s not just about the luxury cabins.
-            It&apos;s about the experience of reconnecting with nature and enjoying
-            simple pleasures with family.
+            paradise away from home. But it&apos;s not just about the luxury
+            cabins. It&apos;s about the experience of reconnecting with nature
+            and enjoying simple pleasures with family.
           </p>
           <p>
             Our 8 luxury cabins provide a cozy base, but the real freedom and
-            peace you&apos;ll find in the surrounding mountains. Wander through lush
-            forests, breathe in the fresh air, and watch the stars twinkle above
-            from the warmth of a campfire or your hot tub.
+            peace you&apos;ll find in the surrounding mountains. Wander through
+            lush forests, breathe in the fresh air, and watch the stars twinkle
+            above from the warmth of a campfire or your hot tub.
           </p>
           <p>
-            This is where memorable moments are made, surrounded by nature&apos;s
-            splendor. It&apos;s a place to slow down, relax, and feel the joy of
-            being together in a beautiful setting.
+            This is where memorable moments are made, surrounded by
+            nature&apos;s splendor. It&apos;s a place to slow down, relax, and
+            feel the joy of being together in a beautiful setting.
           </p>
         </div>
       </div>
-      
+
       <div className="col-span-2">
         <Image
           src={img1}
@@ -45,23 +45,24 @@ export default function Page() {
           alt="Family sitting around a fire pit in front of cabin"
         />
       </div>
-      
+
       <div className="col-span-2 relative aspect-square">
         {/*video*/}
-          <Image src="/about-2.jpg"
-                 placeholer={`blur`}
-                 fill
-                 className={`object-cover`}
-                 quality={60}
-                 alt="Family that manages The Wild Oasis"
-          />
+        <Image
+          src="/about-2.jpg"
+          placeholer={`blur`}
+          fill
+          className={`object-cover`}
+          quality={60}
+          alt="Family that manages The Wild Oasis"
+        />
       </div>
-      
+
       <div className="col-span-3">
         <h1 className="text-4xl mb-10 text-accent-400 font-medium">
           Managed by our family since 1962
         </h1>
-        
+
         <div className="space-y-8">
           <p>
             Since 1962, The Wild Oasis has been a cherished family-run retreat.
@@ -73,11 +74,11 @@ export default function Page() {
             Over the years, we&apos;ve maintained the essence of The Wild Oasis,
             blending the timeless beauty of the mountains with the personal
             touch only a family business can offer. Here, you&apos;re not just a
-            guest; you&apos;re part of our extended family. So join us at The Wild
-            Oasis soon, where tradition meets tranquility, and every visit is
-            like coming home.
+            guest; you&apos;re part of our extended family. So join us at The
+            Wild Oasis soon, where tradition meets tranquility, and every visit
+            is like coming home.
           </p>
-          
+
           <div>
             <Link
               href="/cabins"
