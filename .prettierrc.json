@@ -1,19 +1,19 @@
 {
-  "prettier.useEditorConfig": false,
-  "prettier.printWidth": 160,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.semi": true,
-  "prettier.trailingComma": "all",
-  "prettier.bracketSpacing": true,
-  "prettier.bracketSameLine": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.vueIndentScriptAndStyle": true,
-  "prettier.endOfLine": "auto",
-  "prettier.jsxSingleQuote": true,
-  "prettier.proseWrap": "preserve",
-  "prettier.singleQuote": true,
-  "prettier.overrides": [
+  "useEditorConfig": false,
+  "printWidth": 160,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "arrowParens": "avoid",
+  "vueIndentScriptAndStyle": true,
+  "endOfLine": "auto",
+  "jsxSingleQuote": true,
+  "proseWrap": "preserve",
+  "singleQuote": true,
+  "overrides": [
     {
       "files": "*.json",
       "options": {
@@ -21,7 +21,7 @@
       }
     }
   ],
-  "prettier.disableLanguages": [
+  "disableLanguages": [
     "md",
     "txt",
     "xlsx"

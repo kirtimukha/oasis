@@ -4,7 +4,7 @@
   ],
   "extends": [
     "next/core-web-vitals",
-    //"eslint:recommended",
+    "eslint:recommended",
     "plugin:prettier/recommended"
   ],
   "env": {
@@ -13,6 +13,13 @@
     "browser": true
   },
   "rules": {
+    "react/jsx-curly-spacing": [
+      "error",
+      {
+        "when": "always",
+        "children": true
+      }
+    ],
     "no-unused-expressions": "off",
     "no-unused-vars": [
       "warn",
@@ -25,19 +32,6 @@
         "ignoreRestSiblings": true
       }
     ],
-    "quotes": [
-      "error",
-      "single",
-      {
-        "avoidEscape": true
-      }
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "jsxSingleQuote": true
-      }
-    ]
+    "prettier/prettier": "off" // eslint에서 prettier 설정을 중복으로 할 필요가 없도록 함
   }
 }
