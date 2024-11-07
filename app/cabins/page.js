@@ -7,7 +7,7 @@ export const metadata = {
 	description: 'Cabins detail, look at precisely',
 	keywords: 'Cabins, details',
 };
-export default async function Page() {
+export default function Page() {
 	// CHANGE
 
 	return (
