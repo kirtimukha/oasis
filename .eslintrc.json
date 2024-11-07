@@ -32,6 +32,7 @@
         "ignoreRestSiblings": true
       }
     ],
-    "prettier/prettier": "off" // eslint에서 prettier 설정을 중복으로 할 필요가 없도록 함
+    "prettier/prettier": "off"
+    // eslint에서 prettier 설정을 중복으로 할 필요가 없도록 함
   }
 }

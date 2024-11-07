@@ -5,18 +5,18 @@ async function Price({ cabinId }) {
 
   return (
     <p className='mt-12 text-3xl flex gap-3 items-baseline'>
-      {discount > 0 ? (
+      { discount > 0 ? (
         <>
           <span className='text-3xl font-[350]'>
-            ${regularPrice - discount}
+            ${ regularPrice - discount }
           </span>
           <span className='line-through font-semibold text-primary-600'>
-            ${regularPrice}
+            ${ regularPrice }
           </span>
         </>
       ) : (
-        <span className='text-3xl font-[350]'>${regularPrice}</span>
-      )}
+        <span className='text-3xl font-[350]'>${ regularPrice }</span>
+      ) }
       <span className='text-primary-200'>/ night</span>
     </p>
   );

@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div>
       <h2 className='font-semibold text-2xl text-accent-400 mb-7'>
-        Edit Reservation #{reservationId}
+        Edit Reservation #{ reservationId }
       </h2>
 
       <form className='bg-primary-900 py-8 px-12 text-lg flex gap-6 flex-col'>
@@ -21,11 +21,11 @@ export default function Page() {
             <option value='' key=''>
               Select number of guests...
             </option>
-            {Array.from({ length: maxCapacity }, (_, i) => i + 1).map((x) => (
-              <option value={x} key={x}>
-                {x} {x === 1 ? 'guest' : 'guests'}
+            { Array.from({ length: maxCapacity }, (_, i) => i + 1).map((x) => (
+              <option value={ x } key={ x }>
+                { x } { x === 1 ? 'guest' : 'guests' }
               </option>
-            ))}
+            )) }
           </select>
         </div>
 

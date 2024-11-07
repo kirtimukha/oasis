@@ -14,14 +14,6 @@
   "jsxSingleQuote": true,
   "proseWrap": "preserve",
   "singleQuote": true,
-  "overrides": [
-    {
-      "files": "*.json",
-      "options": {
-        "printWidth": 200
-      }
-    }
-  ],
   "disableLanguages": [
     "md",
     "txt",

@@ -29,51 +29,51 @@ function DateSelector() {
       <DayPicker
         className='pt-12 place-self-center'
         mode='range'
-        min={minBookingLength + 1}
-        max={maxBookingLength}
-        fromMonth={new Date()}
-        fromDate={new Date()}
-        toYear={new Date().getFullYear() + 5}
+        min={ minBookingLength + 1 }
+        max={ maxBookingLength }
+        fromMonth={ new Date() }
+        fromDate={ new Date() }
+        toYear={ new Date().getFullYear() + 5 }
         captionLayout='dropdown'
-        numberOfMonths={2}
+        numberOfMonths={ 2 }
       />
 
       <div className='flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]'>
         <div className='flex items-baseline gap-6'>
           <p className='flex gap-2 items-baseline'>
-            {discount > 0 ? (
+            { discount > 0 ? (
               <>
-                <span className='text-2xl'>${regularPrice - discount}</span>
+                <span className='text-2xl'>${ regularPrice - discount }</span>
                 <span className='line-through font-semibold text-primary-700'>
-                  ${regularPrice}
+                  ${ regularPrice }
                 </span>
               </>
             ) : (
-              <span className='text-2xl'>${regularPrice}</span>
-            )}
+              <span className='text-2xl'>${ regularPrice }</span>
+            ) }
             <span className=''>/night</span>
           </p>
-          {numNights ? (
+          { numNights ? (
             <>
               <p className='bg-accent-600 px-3 py-2 text-2xl'>
-                <span>&times;</span> <span>{numNights}</span>
+                <span>&times;</span> <span>{ numNights }</span>
               </p>
               <p>
-                <span className='text-lg font-bold uppercase'>Total</span>{' '}
-                <span className='text-2xl font-semibold'>${cabinPrice}</span>
+                <span className='text-lg font-bold uppercase'>Total</span>{ ' ' }
+                <span className='text-2xl font-semibold'>${ cabinPrice }</span>
               </p>
             </>
-          ) : null}
+          ) : null }
         </div>
 
-        {range.from || range.to ? (
+        { range.from || range.to ? (
           <button
             className='border border-primary-800 py-2 px-4 text-sm font-semibold'
-            onClick={() => resetRange()}
+            onClick={ () => resetRange() }
           >
             Clear
           </button>
-        ) : null}
+        ) : null }
       </div>
     </div>
   );

@@ -39,21 +39,21 @@ export default function Page() {
 
       <div className='col-span-2'>
         <Image
-          src={img1}
-          placeholer={`blur`}
-          quality={60}
+          src={ img1 }
+          placeholer={ `blur` }
+          quality={ 60 }
           alt='Family sitting around a fire pit in front of cabin'
         />
       </div>
 
       <div className='col-span-2 relative aspect-square'>
-        {/*video*/}
+        { /*video*/ }
         <Image
           src='/about-2.jpg'
-          placeholer={`blur`}
+          placeholer={ `blur` }
           fill
-          className={`object-cover`}
-          quality={60}
+          className={ `object-cover` }
+          quality={ 60 }
           alt='Family that manages The Wild Oasis'
         />
       </div>

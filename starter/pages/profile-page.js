@@ -37,7 +37,7 @@ export default function Page() {
           <div className='flex items-center justify-between'>
             <label htmlFor='nationality'>Where are you from?</label>
             <img
-              src={countryFlag}
+              src={ countryFlag }
               alt='Country flag'
               className='h-5 rounded-sm'
             />
@@ -47,7 +47,7 @@ export default function Page() {
             name='nationality'
             id='nationality'
             className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'
-            defaultCountry={nationality}
+            defaultCountry={ nationality }
           />
         </div>
 

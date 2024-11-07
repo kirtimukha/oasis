@@ -24,13 +24,13 @@ export default async function Page() {
         Welcome to paradise.
       </p>
 
-      {cabins.length > 0 && (
+      { cabins.length > 0 && (
         <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 xl:gap-14'>
-          {cabins.map((item) => (
-            <CabinCard cabin={item} key={item.id} />
-          ))}
+          { cabins.map((item) => (
+            <CabinCard cabin={ item } key={ item.id } />
+          )) }
         </div>
-      )}
+      ) }
     </div>
   );
 }
