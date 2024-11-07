@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			{ /*<body className={`bg-blue-900 min-h-screen text-primary-100 __className_2ad2c0`}>*/ }
 			<body
-				className={ `bg-primary-900 min-h-screen text-primary-100 ${josefin.className}
+				className={ `light-mode bg-primary-900 min-h-screen text-primary-100 ${josefin.className}
         min-h-screen flex flex-col antialiased` }
 			>
 				<Header />
