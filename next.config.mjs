@@ -10,6 +10,7 @@ const nextConfig = {
 			},
 		],
 	},
+	//output: 'export', // 완전 스태틱 사이트로 추출된다.
 };
 
 export default nextConfig;
