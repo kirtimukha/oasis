@@ -3,6 +3,7 @@ import { EyeSlashIcon, MapPinIcon, UsersIcon } from '@heroicons/react/24/solid';
 import { getCabin, getCabins } from '@/app/_lib/data-service';
 import Image from 'next/image';
 import TextExpander from '@/app/_components/TextExpander';
+import DateSelector from '@/app/_components/DateSelector';
 
 export async function generateMetadata({ params }) {
 	const { name } = await getCabin(params.cabinId);
@@ -65,8 +66,11 @@ export default async function Page({ params }) {
 
 			<div>
 				<h2 className='text-5xl font-semibold text-center'>
-					Reserve today. Pay on arrival.
+					Reserve today. { cabin.name } Pay on arrival.
 				</h2>
+				<div className='reserve'>
+					<DateSelector />
+				</div>
 			</div>
 		</div>
 	);
