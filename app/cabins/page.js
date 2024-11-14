@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import CabinList from '@/app/_components/CabinList';
 import Spinner from '@/app/_components/Spinner';
 
-export const revalidate = 0; // revalidate 에는 computed 값(ex 5*12)을 넣을 수 없다. 처음에는 완전한 수를 넣어야 한다.
+export const revalidate = 3600; // 밀리세컨 아니고 기준이 초임.  60*60: 1 시간에 한번. revalidate 에는 computed 값(ex 5*12)을 넣을 수 없다. 처음에는 완전한 수를 넣어야 한다.
 
 export const metadata = {
 	title: 'Cabins',
@@ -26,7 +26,7 @@ export default function Page() {
 				Welcome to paradise.
 			</p>
 			<Suspense fallback={ <Spinner /> }>
-				<CabinList />
+				<CabinList /> { /*  noSotre때문에 이 부분만 동적이 된다. */ }
 			</Suspense>
 		</div>
 	);
